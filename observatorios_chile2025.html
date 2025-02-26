@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5b40d4654849740a2982e65b570239c3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5b40d4654849740a2982e65b570239c3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5b40d4654849740a2982e65b570239c3 = L.map(
+                "map_5b40d4654849740a2982e65b570239c3",
+                {
+                    center: [-25.762749999999997, -70.96690000000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9772865e0f907ec7d29ecf591a0867b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a9772865e0f907ec7d29ecf591a0867b.addTo(map_5b40d4654849740a2982e65b570239c3);
+        
+    
+            var marker_b6d719383f9edc466e14d3b167bd8474 = L.marker(
+                [-23.0233, -67.7539],
+                {
+}
+            ).addTo(map_5b40d4654849740a2982e65b570239c3);
+        
+    
+            var icon_c944c6d446ee528907290112777ea661 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b6d719383f9edc466e14d3b167bd8474.setIcon(icon_c944c6d446ee528907290112777ea661);
+        
+    
+        var popup_6112f70f1bef8873bcc3fe43483cc72a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b7213180596d46707c7155e72634bbca = $(`<div id="html_b7213180596d46707c7155e72634bbca" style="width: 100.0%; height: 100.0%;">     <div style="width:200px">         <h4 style="margin-bottom:10px;"><strong>Observatorio ALMA</strong></h4>         <p style="font-size:12px; margin-bottom:2px;"><strong>Administra:</strong></p>         <img src="https://cdn.eso.org/images/screen/eso0334a.jpg" width="180px" style="display:block; margin:auto; border-radius:5px;"><br>         <p style="font-size:12px;">ALMA (Atacama Large Millimeter/submillimeter Array): es un radiotelescopio que permite observar el universo en longitudes de onda milimétricas y submilimétricas.</p>     </div>     </div>`)[0];
+                popup_6112f70f1bef8873bcc3fe43483cc72a.setContent(html_b7213180596d46707c7155e72634bbca);
+            
+        
+
+        marker_b6d719383f9edc466e14d3b167bd8474.bindPopup(popup_6112f70f1bef8873bcc3fe43483cc72a)
+        ;
+
+        
+    
+    
+            var marker_1ca6080260eac8943e950d51c5d9303d = L.marker(
+                [-24.6273, -70.4042],
+                {
+}
+            ).addTo(map_5b40d4654849740a2982e65b570239c3);
+        
+    
+            var icon_aec2f8a4ebb80ebf077b0e2355b96214 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1ca6080260eac8943e950d51c5d9303d.setIcon(icon_aec2f8a4ebb80ebf077b0e2355b96214);
+        
+    
+        var popup_bc5a20b7ab9b86ba0848f445a5c4702f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b5e7c1b5de38f51c16e3da0bab637fee = $(`<div id="html_b5e7c1b5de38f51c16e3da0bab637fee" style="width: 100.0%; height: 100.0%;">     <div style="width:200px">         <h4 style="margin-bottom:10px;"><strong>Observatorio Paranal</strong></h4>         <p style="font-size:12px; margin-bottom:2px;"><strong>Administra:</strong></p>         <img src="https://www.eso.org/public/archives/logos/screen/eso-logo-p3005.jpg" width="180px" style="display:block; margin:auto; border-radius:5px;"><br>         <p style="font-size:12px;">Paranal: es uno de los observatorios más grandes y avanzados del mundo. Cuenta con el Very Large Telescope (VLT), un conjunto de cuatro telescopios que pueden funcionar de manera conjunta o individual, y es el lugar donde se construye el futuro Extremely Large Telescope (ELT), el telescopio óptico e infrarrojo cercano más grande del mundo.</p>     </div>     </div>`)[0];
+                popup_bc5a20b7ab9b86ba0848f445a5c4702f.setContent(html_b5e7c1b5de38f51c16e3da0bab637fee);
+            
+        
+
+        marker_1ca6080260eac8943e950d51c5d9303d.bindPopup(popup_bc5a20b7ab9b86ba0848f445a5c4702f)
+        ;
+
+        
+    
+    
+            var marker_756dcaa1f1971d1f84f383cd97606559 = L.marker(
+                [-29.2556, -70.7389],
+                {
+}
+            ).addTo(map_5b40d4654849740a2982e65b570239c3);
+        
+    
+            var icon_302411c27f7eb8e7d397d50404c46c4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_756dcaa1f1971d1f84f383cd97606559.setIcon(icon_302411c27f7eb8e7d397d50404c46c4f);
+        
+    
+        var popup_33dbf77a6afc76488c28b32e5e5b6dda = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8ea6e5df7d1c9a8bee3d91002a1bf0a9 = $(`<div id="html_8ea6e5df7d1c9a8bee3d91002a1bf0a9" style="width: 100.0%; height: 100.0%;">     <div style="width:200px">         <h4 style="margin-bottom:10px;"><strong>Observatorio La Silla</strong></h4>         <p style="font-size:12px; margin-bottom:2px;"><strong>Administra:</strong></p>         <img src="https://www.eso.org/public/archives/logos/screen/eso-logo-p3005.jpg" width="180px" style="display:block; margin:auto; border-radius:5px;"><br>         <p style="font-size:12px;">La Silla: es uno de los observatorios más antiguos de Chile y ha sido escenario de importantes descubrimientos astronómicos.</p>     </div>     </div>`)[0];
+                popup_33dbf77a6afc76488c28b32e5e5b6dda.setContent(html_8ea6e5df7d1c9a8bee3d91002a1bf0a9);
+            
+        
+
+        marker_756dcaa1f1971d1f84f383cd97606559.bindPopup(popup_33dbf77a6afc76488c28b32e5e5b6dda)
+        ;
+
+        
+    
+    
+            var marker_e0ec076ab896ea1b711cb511b0f04299 = L.marker(
+                [-30.1696, -70.8062],
+                {
+}
+            ).addTo(map_5b40d4654849740a2982e65b570239c3);
+        
+    
+            var icon_29915873cdd33aa052bee53262c88f23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e0ec076ab896ea1b711cb511b0f04299.setIcon(icon_29915873cdd33aa052bee53262c88f23);
+        
+    
+        var popup_42517b6b31f240d47ecb38c36c166129 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a268da047fbf1f47739bcfcccd48170f = $(`<div id="html_a268da047fbf1f47739bcfcccd48170f" style="width: 100.0%; height: 100.0%;">     <div style="width:200px">         <h4 style="margin-bottom:10px;"><strong>Observatorio Cerro Tololo</strong></h4>         <p style="font-size:12px; margin-bottom:2px;"><strong>Administra:</strong></p>         <img src="https://noirlab.edu/public/media/archives/logos/screen/logo006.jpg" width="180px" style="display:block; margin:auto; border-radius:5px;"><br>         <p style="font-size:12px;">Cerro Tololo: es otro de los observatorios más importantes de Chile y cuenta con una gran cantidad de telescopios.</p>     </div>     </div>`)[0];
+                popup_42517b6b31f240d47ecb38c36c166129.setContent(html_a268da047fbf1f47739bcfcccd48170f);
+            
+        
+
+        marker_e0ec076ab896ea1b711cb511b0f04299.bindPopup(popup_42517b6b31f240d47ecb38c36c166129)
+        ;
+
+        
+    
+    
+            var marker_19f31da3983b56ee1b3605c2f2cb97e9 = L.marker(
+                [-30.2407, -70.7361],
+                {
+}
+            ).addTo(map_5b40d4654849740a2982e65b570239c3);
+        
+    
+            var icon_2fda8cf547504dfeaa3cdc4dc4a5944f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_19f31da3983b56ee1b3605c2f2cb97e9.setIcon(icon_2fda8cf547504dfeaa3cdc4dc4a5944f);
+        
+    
+        var popup_bcffa8065d83af73afff7a3ade704a47 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3da15f8d4ba5cdc1c66b9c38fba105d0 = $(`<div id="html_3da15f8d4ba5cdc1c66b9c38fba105d0" style="width: 100.0%; height: 100.0%;">     <div style="width:200px">         <h4 style="margin-bottom:10px;"><strong>Observatorio Gemini Sur</strong></h4>         <p style="font-size:12px; margin-bottom:2px;"><strong>Administra:</strong></p>         <img src="https://noirlab.edu/public/media/archives/logos/screen/logo006.jpg" width="180px" style="display:block; margin:auto; border-radius:5px;"><br>         <p style="font-size:12px;">Gemini Sur: es un observatorio internacional que cuenta con un telescopio de 8 metros de diámetro.</p>     </div>     </div>`)[0];
+                popup_bcffa8065d83af73afff7a3ade704a47.setContent(html_3da15f8d4ba5cdc1c66b9c38fba105d0);
+            
+        
+
+        marker_19f31da3983b56ee1b3605c2f2cb97e9.bindPopup(popup_bcffa8065d83af73afff7a3ade704a47)
+        ;
+
+        
+    
+    
+            tile_layer_a9772865e0f907ec7d29ecf591a0867b.addTo(map_5b40d4654849740a2982e65b570239c3);
+        
+</script>
+</html>
